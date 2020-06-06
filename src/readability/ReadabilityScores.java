@@ -31,24 +31,28 @@ public class ReadabilityScores {
                             automatedReadabilityIndex,
                             AgeStatistic.getAge((int)Math.round(automatedReadabilityIndex))));
                     numberOfScores++;
+                    sumAge += AgeStatistic.getAge((int)Math.round(automatedReadabilityIndex));
                     break;
                 case "FK":
                     result.add(String.format("Flesch–Kincaid readability tests: %.2f (about %d year olds)",
                             fleschKincaidTests,
                             AgeStatistic.getAge((int)Math.round(fleschKincaidTests))));
                     numberOfScores++;
+                    sumAge += AgeStatistic.getAge((int)Math.round(fleschKincaidTests));
                     break;
                 case "SMOG":
                     result.add(String.format("Simple Measure of Gobbledygook: %.2f (about %d year olds)",
                             simpleMeasureOfGobbledygook,
                             AgeStatistic.getAge((int)Math.round(simpleMeasureOfGobbledygook))));
                     numberOfScores++;
+                    sumAge += AgeStatistic.getAge((int)Math.round(simpleMeasureOfGobbledygook));
                     break;
                 case "CL":
                     result.add(String.format("Coleman–Liau index: %.2f (about %d year olds)",
                             colemanLiauIndex,
                             AgeStatistic.getAge((int)Math.round(colemanLiauIndex))));
                     numberOfScores++;
+                    sumAge += AgeStatistic.getAge((int)Math.round(colemanLiauIndex));
                     break;
                 case "all":
                     result.add(String.format("Automated Readability Index: %.2f (about %d year olds)",
@@ -64,17 +68,17 @@ public class ReadabilityScores {
                             colemanLiauIndex,
                             AgeStatistic.getAge((int)Math.round(colemanLiauIndex))));
                     numberOfScores = 4;
+                    all();
                     break;
             }
-            sumAge();
-            averageAge = sumAge / numberOfScores;
         }
+        averageAge = sumAge / numberOfScores;
 
 
         return result;
     }
 
-    private void sumAge() {
+    private void all() {
         sumAge += AgeStatistic.getAge((int)Math.round(automatedReadabilityIndex));
         sumAge += AgeStatistic.getAge((int)Math.round(simpleMeasureOfGobbledygook));
         sumAge += AgeStatistic.getAge((int)Math.round(fleschKincaidTests));
