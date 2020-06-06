@@ -29,3 +29,6 @@
 
 ![Params](https://github.com/maxim092001/TextReadability/blob/master/resources/params.png)
 ![Result](https://github.com/maxim092001/TextReadability/blob/master/resources/result.png)
+
+Данный проект был мной выполнен в [JetBrains Academy](https://www.jetbrains.com/ru-ru/academy/),
+платформа [Hyperskill](https://hyperskill.org/).
