@@ -10,7 +10,7 @@ Each of the metrics allows you to find out the minimum age of a reader who can c
 
 The utility was written for personal use. Helps analyze readability:
 
-* The documentation I wrote in[PromoCat](https://promocatcompany.com)
+* The documentation I wrote in [PromoCat](https://promocatcompany.com)
 * CV.
 * Some essay/review in English.
 
